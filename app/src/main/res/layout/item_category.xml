@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="200dp"
+    android:elevation="@dimen/cardview_default_elevation"
+    android:layout_margin="5dp"
+    app:cardCornerRadius="10dp"
+    android:id="@+id/cardview_id"
+    android:clickable="true"
+
+    android:padding="3dp"
+    >
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/categoryImageView"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:src="@drawable/ic_launcher_background"
+            android:scaleType="fitXY"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/categoryNameTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="150dp"
+            android:layout_marginBottom="0dp"
+            android:textSize="15sp"
+            android:textColor="@color/colorTransparentWhite"
+            android:text="Category"
+            android:padding="10dp"
+            app:layout_constraintBottom_toBottomOf="@+id/categoryViewPager"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="MissingConstraints" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.cardview.widget.CardView>
